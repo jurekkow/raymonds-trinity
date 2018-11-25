@@ -16,6 +16,18 @@ class Banana:
     curvature: int
     brand_name: str
 
+    def peel(self):
+        """
+        This is dummy method, created only for showing how to use doctest
+        to check for expected exceptions
+        >>> banana = Banana(weight_grams=120, curvature=3, brand_name='Chiquita')
+        >>> banana.peel()
+        Traceback (most recent call last):
+            ...
+        NotImplementedError: Banana's peeling will be available in next API
+        """
+        raise NotImplementedError('Banana\'s peeling will be available in next API')
+
 
 @dataclass
 class Puppy:
